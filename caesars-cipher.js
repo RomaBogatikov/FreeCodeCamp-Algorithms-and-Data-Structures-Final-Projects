@@ -23,7 +23,7 @@ function rot13(str) {
         if (index >= 0) {                           //if 'value' exists in 'alph' (its index is >= 0)
             if (index >= 13) {                      //if index of 'value' in 'alph' is >= 13
                 total.push(alph[index - 13])        //push an element from 'alph' with index of [index - 13] to total
-            } else { total.push(alph[25 -(13 - index - 1)])}    //otherwise push element from 'alph' with index of [25 - (13 - index - 1)]
+            } else { total.push(alph[25 - (13 - index - 1)])}    //otherwise push element from 'alph' with index of [25 - (13 - index - 1)]
         } else {total.push(value)}                  //if 'value' doesn't exist in 'alph', push 'value' to 'total'
         return total
     }, [])
